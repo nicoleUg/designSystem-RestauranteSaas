@@ -14,6 +14,8 @@ import 'package:restaurantesaas_design_system/usecases/button_usecases.dart'
     as _restaurantesaas_design_system_usecases_button_usecases;
 import 'package:restaurantesaas_design_system/usecases/card_usecases.dart'
     as _restaurantesaas_design_system_usecases_card_usecases;
+import 'package:restaurantesaas_design_system/usecases/chip_usecases.dart'
+    as _restaurantesaas_design_system_usecases_chip_usecases;
 import 'package:restaurantesaas_design_system/usecases/input_usecases.dart'
     as _restaurantesaas_design_system_usecases_input_usecases;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
@@ -59,6 +61,21 @@ final directories = <_widgetbook.WidgetbookNode>[
             name: 'Tarjeta Básica',
             builder: _restaurantesaas_design_system_usecases_card_usecases
                 .buildBasicCardUseCase,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RSChoiceChip',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Inactivo / No seleccionado',
+            builder: _restaurantesaas_design_system_usecases_chip_usecases
+                .buildUnselectedChipUseCase,
+          ),
+          _widgetbook.WidgetbookUseCase(
+            name: 'Seleccionado',
+            builder: _restaurantesaas_design_system_usecases_chip_usecases
+                .buildSelectedChipUseCase,
           ),
         ],
       ),

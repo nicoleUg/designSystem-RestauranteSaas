@@ -1,0 +1,22 @@
+[{
+  "name": "buildSelectedChipUseCase",
+  "designLink": null,
+  "useCaseName": "Seleccionado",
+  "importStatement": "package:restaurantesaas_design_system/usecases/chip_usecases.dart",
+  "componentName": "RSChoiceChip",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/chips.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildUnselectedChipUseCase",
+  "designLink": null,
+  "useCaseName": "Inactivo / No seleccionado",
+  "importStatement": "package:restaurantesaas_design_system/usecases/chip_usecases.dart",
+  "componentName": "RSChoiceChip",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/chips.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]
