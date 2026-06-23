@@ -1,0 +1,11 @@
+[{
+  "name": "buildSpacingUseCase",
+  "designLink": null,
+  "useCaseName": "Escala de Espaciado",
+  "importStatement": "package:restaurantesaas_design_system/src/widgets/spacing_usecases.dart",
+  "componentName": "Espaciado",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/spacing_usecases.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

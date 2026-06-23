@@ -10,6 +10,10 @@
 // **************************************************************************
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:restaurantesaas_design_system/src/widgets/spacing_usecases.dart'
+    as _restaurantesaas_design_system_src_widgets_spacing_usecases;
+import 'package:restaurantesaas_design_system/src/widgets/typography_usecases.dart'
+    as _restaurantesaas_design_system_src_widgets_typography_usecases;
 import 'package:restaurantesaas_design_system/usecases/button_usecases.dart'
     as _restaurantesaas_design_system_usecases_button_usecases;
 import 'package:restaurantesaas_design_system/usecases/card_usecases.dart'
@@ -45,6 +49,16 @@ final directories = <_widgetbook.WidgetbookNode>[
   _widgetbook.WidgetbookFolder(
     name: 'widgets',
     children: [
+      _widgetbook.WidgetbookComponent(
+        name: 'Espaciado',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Escala de Espaciado',
+            builder: _restaurantesaas_design_system_src_widgets_spacing_usecases
+                .buildSpacingUseCase,
+          )
+        ],
+      ),
       _widgetbook.WidgetbookComponent(
         name: 'RSAdminBottomNav',
         useCases: [
@@ -143,6 +157,17 @@ final directories = <_widgetbook.WidgetbookNode>[
             builder: _restaurantesaas_design_system_usecases_input_usecases
                 .buildStandardInputUseCase,
           ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'Tipografia',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Estilos de Texto',
+            builder:
+                _restaurantesaas_design_system_src_widgets_typography_usecases
+                    .buildTypographyUseCase,
+          )
         ],
       ),
     ],

@@ -1,0 +1,11 @@
+[{
+  "name": "buildTypographyUseCase",
+  "designLink": null,
+  "useCaseName": "Estilos de Texto",
+  "importStatement": "package:restaurantesaas_design_system/src/widgets/typography_usecases.dart",
+  "componentName": "Tipografia",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/typography_usecases.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

@@ -1,24 +1,27 @@
-// lib/usecases/typography_usecases.dart
 import 'package:flutter/material.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
-import '../src/tokens/tokens.dart';
+import '../tokens/tokens.dart'; 
 
-@widgetbook.UseCase(name: 'Estilos de Texto', type: RSTypography)
+class Tipografia extends StatelessWidget {
+  const Tipografia({super.key});
+  @override Widget build(BuildContext context) => const SizedBox.shrink();
+}
+
+@widgetbook.UseCase(name: 'Estilos de Texto', type: Tipografia)
 Widget buildTypographyUseCase(BuildContext context) {
-  // Lista de estilos basados en tus tokens
   final List<_TypographyItem> styles = [
-    _TypographyItem(name: 'headlineLarge', style: RSTypography.headlineLarge ?? const TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
-    _TypographyItem(name: 'headlineMedium', style: RSTypography.headlineMedium ?? const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
-    _TypographyItem(name: 'headlineSmall', style: RSTypography.headlineSmall ?? const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-    _TypographyItem(name: 'titleLarge', style: RSTypography.titleLarge ?? const TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
-    _TypographyItem(name: 'titleMedium', style: RSTypography.titleMedium ?? const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-    _TypographyItem(name: 'titleSmall', style: RSTypography.titleSmall ?? const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
-    _TypographyItem(name: 'bodyLarge', style: RSTypography.bodyLarge ?? const TextStyle(fontSize: 16, fontWeight: FontWeight.normal)),
-    _TypographyItem(name: 'bodyMedium', style: RSTypography.bodyMedium ?? const TextStyle(fontSize: 14, fontWeight: FontWeight.normal)),
-    _TypographyItem(name: 'bodySmall', style: RSTypography.bodySmall ?? const TextStyle(fontSize: 12, fontWeight: FontWeight.normal)),
-    _TypographyItem(name: 'labelLarge', style: RSTypography.labelLarge ?? const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
-    _TypographyItem(name: 'labelMedium', style: RSTypography.labelMedium ?? const TextStyle(fontSize: 12, fontWeight: FontWeight.w500)),
-    _TypographyItem(name: 'labelSmall', style: RSTypography.labelSmall ?? const TextStyle(fontSize: 11, fontWeight: FontWeight.w500)),
+    _TypographyItem(name: 'headlineLarge', style: RSTypography.headlineLarge),
+    _TypographyItem(name: 'headlineMedium', style: RSTypography.headlineMedium),
+    _TypographyItem(name: 'headlineSmall', style: RSTypography.headlineSmall),
+    _TypographyItem(name: 'titleLarge', style: RSTypography.titleLarge),
+    _TypographyItem(name: 'titleMedium', style: RSTypography.titleMedium),
+    _TypographyItem(name: 'titleSmall', style: RSTypography.titleSmall),
+    _TypographyItem(name: 'bodyLarge', style: RSTypography.bodyLarge),
+    _TypographyItem(name: 'bodyMedium', style: RSTypography.bodyMedium),
+    _TypographyItem(name: 'bodySmall', style: RSTypography.bodySmall),
+    _TypographyItem(name: 'labelLarge', style: RSTypography.labelLarge),
+    _TypographyItem(name: 'labelMedium', style: RSTypography.labelMedium),
+    _TypographyItem(name: 'labelSmall', style: RSTypography.labelSmall),
   ];
 
   return Scaffold(
@@ -28,9 +31,9 @@ Widget buildTypographyUseCase(BuildContext context) {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Tipografía - RestauranteSaas', style: RSTypography.headlineMedium?.copyWith(color: Colors.black87) ?? const TextStyle(fontSize: 28)),
-          const SizedBox(height: 8), // Usamos SizedBox nativo si no hay RSSpacing.verticalSm aquí
-          Text('Escala tipográfica oficial del sistema.', style: RSTypography.bodyMedium?.copyWith(color: Colors.black54) ?? const TextStyle(fontSize: 14)),
+          Text('Tipografía - RestauranteSaas', style: RSTypography.headlineMedium.copyWith(color: Colors.black87)),
+          const SizedBox(height: 8), 
+          Text('Escala tipográfica oficial del sistema.', style: RSTypography.bodyMedium.copyWith(color: Colors.black54)),
           const SizedBox(height: 24),
           Expanded(
             child: ListView.separated(
@@ -43,7 +46,6 @@ Widget buildTypographyUseCase(BuildContext context) {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // Información técnica del token
                       SizedBox(
                         width: 150,
                         child: Column(
@@ -62,7 +64,6 @@ Widget buildTypographyUseCase(BuildContext context) {
                         ),
                       ),
                       const SizedBox(width: 24),
-                      // Vista previa del texto
                       Expanded(
                         child: Text(
                           'El rápido zorro marrón salta sobre el perro perezoso.',
