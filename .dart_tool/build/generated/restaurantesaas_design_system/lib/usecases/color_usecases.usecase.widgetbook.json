@@ -1,0 +1,11 @@
+[{
+  "name": "buildColorPaletteUseCase",
+  "designLink": null,
+  "useCaseName": "Paleta de Colores",
+  "importStatement": "package:restaurantesaas_design_system/usecases/color_usecases.dart",
+  "componentName": "RSColors",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/tokens/tokens.dart",
+  "navPath": "tokens",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

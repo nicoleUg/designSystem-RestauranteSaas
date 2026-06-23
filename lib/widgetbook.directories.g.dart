@@ -16,6 +16,8 @@ import 'package:restaurantesaas_design_system/usecases/card_usecases.dart'
     as _restaurantesaas_design_system_usecases_card_usecases;
 import 'package:restaurantesaas_design_system/usecases/chip_usecases.dart'
     as _restaurantesaas_design_system_usecases_chip_usecases;
+import 'package:restaurantesaas_design_system/usecases/color_usecases.dart'
+    as _restaurantesaas_design_system_usecases_color_usecases;
 import 'package:restaurantesaas_design_system/usecases/drag_drop_usecases.dart'
     as _restaurantesaas_design_system_usecases_drag_drop_usecases;
 import 'package:restaurantesaas_design_system/usecases/input_usecases.dart'
@@ -25,6 +27,21 @@ import 'package:restaurantesaas_design_system/usecases/navigation_usecases.dart'
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
 final directories = <_widgetbook.WidgetbookNode>[
+  _widgetbook.WidgetbookFolder(
+    name: 'tokens',
+    children: [
+      _widgetbook.WidgetbookComponent(
+        name: 'RSColors',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Paleta de Colores',
+            builder: _restaurantesaas_design_system_usecases_color_usecases
+                .buildColorPaletteUseCase,
+          )
+        ],
+      )
+    ],
+  ),
   _widgetbook.WidgetbookFolder(
     name: 'widgets',
     children: [
@@ -129,5 +146,5 @@ final directories = <_widgetbook.WidgetbookNode>[
         ],
       ),
     ],
-  )
+  ),
 ];
