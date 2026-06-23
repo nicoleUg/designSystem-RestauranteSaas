@@ -1,0 +1,11 @@
+[{
+  "name": "buildKanbanColumnUseCase",
+  "designLink": null,
+  "useCaseName": "Columna Kanban con Pedidos",
+  "importStatement": "package:restaurantesaas_design_system/usecases/drag_drop_usecases.dart",
+  "componentName": "RSOrderKanbanColumn",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/drag_drop_widgets.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

@@ -16,14 +16,38 @@ import 'package:restaurantesaas_design_system/usecases/card_usecases.dart'
     as _restaurantesaas_design_system_usecases_card_usecases;
 import 'package:restaurantesaas_design_system/usecases/chip_usecases.dart'
     as _restaurantesaas_design_system_usecases_chip_usecases;
+import 'package:restaurantesaas_design_system/usecases/drag_drop_usecases.dart'
+    as _restaurantesaas_design_system_usecases_drag_drop_usecases;
 import 'package:restaurantesaas_design_system/usecases/input_usecases.dart'
     as _restaurantesaas_design_system_usecases_input_usecases;
+import 'package:restaurantesaas_design_system/usecases/navigation_usecases.dart'
+    as _restaurantesaas_design_system_usecases_navigation_usecases;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
 final directories = <_widgetbook.WidgetbookNode>[
   _widgetbook.WidgetbookFolder(
     name: 'widgets',
     children: [
+      _widgetbook.WidgetbookComponent(
+        name: 'RSAdminBottomNav',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Bottom Nav Mobile',
+            builder: _restaurantesaas_design_system_usecases_navigation_usecases
+                .buildBottomNavUseCase,
+          )
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RSAdminDrawer',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Admin Drawer',
+            builder: _restaurantesaas_design_system_usecases_navigation_usecases
+                .buildAdminDrawerUseCase,
+          )
+        ],
+      ),
       _widgetbook.WidgetbookComponent(
         name: 'RSButton',
         useCases: [
@@ -77,6 +101,16 @@ final directories = <_widgetbook.WidgetbookNode>[
             builder: _restaurantesaas_design_system_usecases_chip_usecases
                 .buildSelectedChipUseCase,
           ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RSOrderKanbanColumn',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Columna Kanban con Pedidos',
+            builder: _restaurantesaas_design_system_usecases_drag_drop_usecases
+                .buildKanbanColumnUseCase,
+          )
         ],
       ),
       _widgetbook.WidgetbookComponent(

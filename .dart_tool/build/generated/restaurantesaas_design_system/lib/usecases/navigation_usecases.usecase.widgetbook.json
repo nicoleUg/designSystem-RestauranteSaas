@@ -1,0 +1,22 @@
+[{
+  "name": "buildAdminDrawerUseCase",
+  "designLink": null,
+  "useCaseName": "Admin Drawer",
+  "importStatement": "package:restaurantesaas_design_system/usecases/navigation_usecases.dart",
+  "componentName": "RSAdminDrawer",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/navigation.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildBottomNavUseCase",
+  "designLink": null,
+  "useCaseName": "Bottom Nav Mobile",
+  "importStatement": "package:restaurantesaas_design_system/usecases/navigation_usecases.dart",
+  "componentName": "RSAdminBottomNav",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/navigation.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]
