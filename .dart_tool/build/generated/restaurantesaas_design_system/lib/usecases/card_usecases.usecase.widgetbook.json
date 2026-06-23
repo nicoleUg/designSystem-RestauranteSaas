@@ -1,0 +1,33 @@
+[{
+  "name": "buildBasicCardUseCase",
+  "designLink": null,
+  "useCaseName": "Tarjeta Básica",
+  "importStatement": "package:restaurantesaas_design_system/usecases/card_usecases.dart",
+  "componentName": "RSCard",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/cards.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildHeaderCardUseCase",
+  "designLink": null,
+  "useCaseName": "Con Imagen Header",
+  "importStatement": "package:restaurantesaas_design_system/usecases/card_usecases.dart",
+  "componentName": "RSCard",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/cards.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildInteractiveCardUseCase",
+  "designLink": null,
+  "useCaseName": "Interactiva (Hover/Tap)",
+  "importStatement": "package:restaurantesaas_design_system/usecases/card_usecases.dart",
+  "componentName": "RSCard",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/cards.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

@@ -1,0 +1,22 @@
+[{
+  "name": "buildStandardInputUseCase",
+  "designLink": null,
+  "useCaseName": "Texto Estándar",
+  "importStatement": "package:restaurantesaas_design_system/usecases/input_usecases.dart",
+  "componentName": "RSTextField",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/inputs.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildPasswordInputUseCase",
+  "designLink": null,
+  "useCaseName": "Contraseña con Iconos",
+  "importStatement": "package:restaurantesaas_design_system/usecases/input_usecases.dart",
+  "componentName": "RSTextField",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/inputs.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]

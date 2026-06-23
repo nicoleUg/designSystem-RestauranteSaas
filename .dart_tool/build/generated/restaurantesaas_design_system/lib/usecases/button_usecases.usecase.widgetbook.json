@@ -1,0 +1,33 @@
+[{
+  "name": "buildFilledButtonUseCase",
+  "designLink": null,
+  "useCaseName": "Filled (Primario)",
+  "importStatement": "package:restaurantesaas_design_system/usecases/button_usecases.dart",
+  "componentName": "RSButton",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/buttons.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildOutlinedButtonUseCase",
+  "designLink": null,
+  "useCaseName": "Outlined",
+  "importStatement": "package:restaurantesaas_design_system/usecases/button_usecases.dart",
+  "componentName": "RSButton",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/buttons.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+},
+{
+  "name": "buildLoadingButtonUseCase",
+  "designLink": null,
+  "useCaseName": "Loading State",
+  "importStatement": "package:restaurantesaas_design_system/usecases/button_usecases.dart",
+  "componentName": "RSButton",
+  "componentImportStatement": "package:restaurantesaas_design_system/src/widgets/buttons.dart",
+  "navPath": "widgets",
+  "cloudExclude": false,
+  "knobsConfigs": null
+}]
